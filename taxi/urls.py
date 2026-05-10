@@ -23,8 +23,6 @@ urlpatterns = [
     path(
         "drivers/<int:pk>/", DriverDetailView.as_view(), name="driver-detail"
     ),
-    path("accounts/login/", LoginView.as_view(), name="login"),
-    path("accounts/logout/", LogoutView.as_view(), name="logout"),
 ]
 
 app_name = "taxi"
